@@ -31,6 +31,29 @@
     getName2()
     getName.call(school)
     getName2.call(school)
+
+    // 不能作为构造实例化对象
+    // let person = (name, age) =>{
+    //     this.name = name
+    //     this.age = age
+    // }
+    // let me =  new person('aa', 30)
+    // console.log(me)
+
+    // 不能使用arguments变量
+    // let fn = () => {
+    //     console.log(arguments)
+    // }
+    // fn(1,2,3)
+
+    // 箭头函数的简写
+        // 省略小括号，当行参有且只有一个的时候
+    // let add = n =>{
+    //     return n + n;
+    // }
+    // console.log(add(9))
+        // 省略花括号，当代码体只有一条语句的时候，此时return必须省略 而且语句的执行结果就是函数的返回值
+    let pow = (n) => n*n
 </script>
 </body>
 </html>

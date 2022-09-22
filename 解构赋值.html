@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // ES6允许按照一定模式从数组和对象中提取值，对变量进行赋值
+    // 这被称为解构赋值
+    // 1.数组的结构
+    const arr = [1, 2, 3, 4]
+    let [a, b, c, d] = arr
+    console.log(a)
+    console.log(b)
+    console.log(c)
+    console.log(d)
+    // 2.对象的结构
+    const obj = {
+        name: 'kk',
+        age: '1',
+        eat: function () {
+            console.log('kk is a dog')
+        }
+    }
+    let {name, age, eat} = obj
+    console.log(name)
+    console.log(age)
+    console.log(eat)
+    eat()
+    // ƒ () {
+    //     console.log('kk is a dog')
+    // }
+</script>
+</body>
+</html>
